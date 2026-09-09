@@ -87,3 +87,8 @@ repo-explainer/
     skills/
   pyproject.toml
 ```
+
+## Skills to install
+
+# Download SKILL.md and place in your agent's skills folder
+curl -o SKILL.md https://github.com/trailofbits/skills/tree/main/plugins/modern-python/skills/modern-python/raw/main/SKILL.md
