@@ -16,7 +16,8 @@ Don't assume the user always knows what you are referencing.
 ## Output defaults
 - Default to Light Mode for any UI, mockup, or visual. Only use Dark Mode when **explicitly** asked.
 - Any standalone HTML document — guide, lesson, reference, mockup — follows the house style in
-  `~/.claude/skills/html-guide-builder/SKILL.md`. Read it before writing HTML, even when that skill wasn't invoked.
+  `.claude/skills/html-guide-builder/SKILL.md`, committed in this repo so it travels to cloud
+  sessions. Read it before writing HTML, even when that skill wasn't invoked.
 
 ## Accessibility
 I have poor vision and read at a large font size, so little text fits
