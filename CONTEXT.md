@@ -57,6 +57,17 @@ A durable record that a specific thing happened, with a fixed shape, collected
 and assembled later to answer questions about behaviour over time.
 _Avoid_: log, metric, telemetry
 
+**Run**:
+One end-to-end invocation of repo-explainer against a single repository,
+producing a single explanation. The unit every event is tagged with.
+_Avoid_: execution, job, session, invocation
+
+**Drop**:
+A path, snippet, or claim removed from an explanation for not being grounded.
+Counting drops is how repo-explainer reports on itself at run time — a dropped
+sentence leaves no trace on the page, so the count is the only place it shows.
+_Avoid_: rejection, filter, exclusion
+
 > Log records and events are **not** the same thing. They have different
 > readers and different lifetimes: a log record is read once by a human, an
 > event is aggregated across many runs.
