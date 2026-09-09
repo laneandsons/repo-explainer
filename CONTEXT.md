@@ -32,8 +32,18 @@ _Avoid_: setup ticket, scaffold ticket
 
 **Explanation**:
 The account of a codebase that repo-explainer produces for a reader. The
-thing the tool exists to make.
+thing the tool exists to make. **Ephemeral**: generated on demand and never
+checked in, so it is never stale.
 _Avoid_: summary, analysis, report, docs
+
+**Grounded**:
+Traceable to a file that was actually downloaded from the repo. A path, a
+snippet, or a prose claim is either grounded or it is dropped — never hedged.
+_Avoid_: verified, sourced, cited, attributed
+
+> A hedge ("this appears to be a CLI tool") can never be wrong, so an eval can
+> never score it. Dropping the ungrounded claim instead keeps every remaining
+> claim scoreable.
 
 ### Observability
 
