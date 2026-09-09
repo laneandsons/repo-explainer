@@ -21,3 +21,17 @@ Don't assume the user always knows what you are referencing.
 
 ## Guardrails
 - Never commit secrets, credentials, or .env contents.
+
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues, driven by the `gh` command-line tool. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+The five default label names, used as-is. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: one `CONTEXT.md` and one `docs/adr/` at the repo root. See `docs/agents/domain.md`.
