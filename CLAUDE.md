@@ -16,8 +16,17 @@ Don't assume the user always knows what you are referencing.
 ## Output defaults
 - Default to Light Mode for any UI, mockup, or visual. Only use Dark Mode when **explicitly** asked.
 - Any standalone HTML document — guide, lesson, reference, mockup — follows the house style in
-  `~/.claude/skills/html-guide-builder/SKILL.md`. Read it before writing HTML, even when that skill
-  wasn't invoked.
+  `~/.claude/skills/html-guide-builder/SKILL.md`. Read it before writing HTML, even when that skill wasn't invoked.
+
+## Accessibility
+I have poor vision and read at a large font size, so little text fits
+on screen at once.
+- Ask at most 2-3 questions at a time. End every question round with a
+  bold summary line naming each question in a few words.
+- Keep written output short and scannable. Prefer short paragraphs and
+  bulleted lists over dense prose; put the answer first.
+- This overrides any skill that says to ask a whole batch of questions
+  in one round — split them across rounds instead.
 
 ## Guardrails
 - Never commit secrets, credentials, or .env contents.
