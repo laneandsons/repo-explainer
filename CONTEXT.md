@@ -80,14 +80,38 @@ A judgement of how good an explanation is, scored against rating axes. Answers
 _Avoid_: test, benchmark, check
 
 **Rating axis**:
-One dimension an explanation is scored on, such as accuracy of interpretation,
-clarity of interpretation, or quality of the rendered HTML.
+One dimension an explanation is scored on: coverage, accuracy, or clarity.
 _Avoid_: criterion, dimension, metric
 
+**Gate**:
+A mechanical pass/fail check on an explanation, made without judgement — the
+five sections are present, the word budget holds, the HTML parses. A page that
+fails the gate is not scored at all. A gate is never a rating axis.
+_Avoid_: check, validation, lint
+
 **Golden set**:
-The growing collection of codebases, paired with explanations judged good, used
-as the input to evals.
+The growing collection of cases used as the input to evals.
 _Avoid_: fixtures, test data, corpus
+
+**Case**:
+One member of the golden set: a small codebase paired with the golden checklist
+for it. Lives in one directory under `evals/cases/`.
+_Avoid_: fixture, test case, example
+
+**Case repo**:
+The codebase inside a case. Built by hand and committed, rather than cloned, so
+an eval run needs no network and gives the same answer every time.
+_Avoid_: fixture repo, sample, mock repo
+
+**Golden checklist**:
+The list of things a good explanation of a case contains — requirements, not a
+reference page. Written by a person; it is the statement of what "good" means
+for that case, which is why no agent can write one.
+_Avoid_: golden output, expected output, reference explanation
+
+> A golden checklist is **not** a page to be matched against. Two explanations
+> can word the same claim differently and both be right, so the checklist lists
+> what must be *covered*, and coverage is counted item by item.
 
 **Snapshot test**:
 A check that output has not changed since last recorded. Answers "is this the
