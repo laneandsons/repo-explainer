@@ -54,7 +54,6 @@ uv build
 
 > uv manages the `.venv/` directory automatically. You do not need to activate
 > it manually — `uv run` handles that for every command above.
-You're right, and I was over-weighting one thing.
 
 ## Stack
 
