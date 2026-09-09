@@ -74,7 +74,7 @@ You're right, and I was over-weighting one thing.
 
 ```
 repo-explainer/
-  src/repo_explainer/
+  src/repo-explainer/
     fetch/      — owner/repo → local file tree
     analyze/    — file tree → structured summary (no LLM)
     llm/        — summary → explanation (prompt, call, validate)
